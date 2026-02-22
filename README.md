@@ -1,91 +1,19 @@
-<div align="center">
+## Mohsen Moghaddam
 
-# Mohsen Moghaddam
-### Quant Developer · Systematic Trading · ML for Finance
+Computer engineering student in Istanbul. I spend most of my time building and validating systematic trading systems in Python.
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-mohsentinal-0A66C2?style=flat-square&logo=linkedin)](https://linkedin.com/in/mohsentinal)
-[![Website](https://img.shields.io/badge/Website-FinSentinal.com-111111?style=flat-square&logo=googlechrome)](https://finsentinal.com)
-[![PyPI](https://img.shields.io/badge/PyPI-wfv--toolkit-3775A9?style=flat-square&logo=pypi)](https://pypi.org/project/wfv-toolkit)
-[![Location](https://img.shields.io/badge/Istanbul-Türkiye-red?style=flat-square&logo=googlemaps)](#)
+Main project is **FinSentinal** — a breakout trading system running on MetaTrader 5. Took about 13 months to get right. It's been live long enough to matter: 94% returns, 105 trades, recently passed a prop firm evaluation. The code stays private but the results are real.
 
-</div>
+Outside of that I've published a few open source tools that came out of needing them for my own research:
 
----
-
-I build production-grade systematic trading systems — from raw market data to live execution. My focus is on rigorous strategy validation, clean backtesting pipelines, and closing the gap between research and live performance.
-
-Currently: completing my Computer Engineering degree (GPA 3.71/4.0) while running **FinSentinal**, a live algorithmic trading system that passed [The5ers](https://the5ers.com) Phase 1 evaluation.
+- **[wfv-toolkit](https://github.com/Mohsentinal/wfv-toolkit)** — walk-forward validation with purge/embargo for time-series ML. Built because standard cross-validation leaks in financial data. `pip install wfv-toolkit`
+- **[alpha-exec-stack](https://github.com/Mohsentinal/alpha-exec-stack)** — microstructure research pipeline on Binance BTCUSDT. WebSocket ingest, 200ms features, GBM labels, maker vs taker evaluation.
+- **[consistency-auditor](https://github.com/Mohsentinal/consistency-auditor)** — CLI tool to audit backtest vs live trade lists. Catches slippage drift and execution bias before they compound.
 
 ---
 
-## Featured Projects
+Currently finishing my degree (3.71 GPA, June 2026) and looking for quant developer roles in Europe.
 
-### 🔒 [FinSentinal](https://finsentinal.com) — Systematic Trading System *(Private)*
-> End-to-end Python/MT5 breakout trading system. H1 support/resistance signals, M1 confirmation, HTF trend filtering, walk-forward validated optimization, Telegram monitoring.
+`Python` `MetaTrader 5` `pandas` `scikit-learn` `Polars` `ccxt`
 
-- **+94% returns** over 13 months live trading · 105 executed trades
-- **Passed The5ers Phase 1** ($818 profit, currently in Phase 2)
-- Instruments: XAUUSD, EURUSD, USDJPY, USDCNH, US equities
-- Stack: Python · MetaTrader 5 · pandas · Telegram API
-
----
-
-### 📦 [wfv-toolkit](https://github.com/Mohsentinal/wfv-toolkit) — Walk-Forward Validation · *PyPI Published*
-> Python package for robust time-series model validation. Implements purge & embargo mechanisms to prevent lookahead bias in financial ML.
-
-```bash
-pip install wfv-toolkit
-```
-
-- Prevents label leakage in time-series cross-validation
-- Designed for strategy research where standard k-fold is invalid
-- MIT Licensed
-
----
-
-### 🔬 [alpha-exec-stack](https://github.com/Mohsentinal/alpha-exec-stack) — Market Microstructure Research Pipeline
-> End-to-end research pipeline: Binance BTCUSDT data ingestion → feature engineering → GBM labeling → maker/taker execution evaluation.
-
-- Real-time WebSocket ingest · 200ms feature granularity
-- Limit order book analysis · execution-aware backtesting
-- Compares maker vs. taker execution strategies
-- Stack: Python · ccxt · scikit-learn · Polars · Parquet
-
----
-
-### 🧪 [consistency-auditor](https://github.com/Mohsentinal/consistency-auditor) — Backtest vs. Live Trade Auditor
-> CLI tool that audits consistency between backtested and live trade lists. Detects slippage, timing drift, and systematic execution bias.
-
-- CSV-based trade matching with configurable tolerances
-- Generates matched/unmatched reports with statistical analysis
-- Built to validate that backtest results translate to live performance
-
----
-
-## Tech Stack
-
-```
-Trading    │ MetaTrader 5 · MQL5 · ccxt · Telegram API
-Research   │ pandas · NumPy · Polars · scikit-learn · LightGBM
-Data       │ WebSocket · REST APIs · Parquet · PostgreSQL
-Tools      │ Python · Git · pytest · ruff · Streamlit · Jupyter
-```
-
----
-
-## Background
-
-- 🎓 B.Sc. Computer Engineering — Istanbul Beykent University *(June 2026)*
-- 📊 Data Science Intern — [Lan4AI](https://lan4.ai) *(Finland, remote)*
-- 📜 Stanford ML Specialization · Yale Financial Markets · DeepLearning.AI
-- 🌍 Persian (native) · English · Turkish · German (learning)
-
----
-
-<div align="center">
-
-*Building systems where research rigor meets live execution.*
-
-**[FinSentinal.com](https://finsentinal.com) · [mohsentinal@gmail.com](mailto:mohsentinal@gmail.com)**
-
-</div>
+[LinkedIn](https://linkedin.com/in/mohsentinal) · [mohsentinal@gmail.com](mailto:mohsentinal@gmail.com) · [FinSentinal.com](https://finsentinal.com)
